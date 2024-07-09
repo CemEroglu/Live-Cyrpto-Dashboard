@@ -20,7 +20,7 @@ function Table({ assets }: TableProps) {
         </tr>
       </thead>
       <tbody>
-      {assets.filter((asset)=>asset.lastPrice!=0).map((asset) => {
+      {assets.filter((asset)=>(asset.symbol.endsWith("USDT"))&&(asset.lastPrice!=0)).map((asset) => {
         return <tr>
             <td><Symbol symbol = {asset.symbol}/></td>
             <td><Price price={asset.lastPrice}/></td>
