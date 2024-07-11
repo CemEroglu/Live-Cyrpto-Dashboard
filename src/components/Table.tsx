@@ -5,13 +5,15 @@ import Symbol from "./Symbol";
 import Price from "./Price";
 import MarketValue from "./MarketValue";
 import PriceChange from "./PriceChange";
+import "./Table.css"
 interface TableProps {
   assets: Asset[];
 }
 
 function Table({ assets }: TableProps) {
   return (
-    <table>
+    <div className="table-wrapper">
+    <table className="table">
       <thead>
         <tr>
           {TableHeaders.map((header) => (
@@ -25,12 +27,13 @@ function Table({ assets }: TableProps) {
             <td><Symbol symbol = {asset.symbol}/></td>
             <td><Price price={asset.lastPrice}/></td>
             <td><MarketValue marketValue={asset.quoteVolume}/></td>
-            <td><PriceChange priceChange={asset.priceChangePercent}/></td>
-            <td>Graph will be here</td>
+            <td className="price-change positive"><PriceChange priceChange={asset.priceChangePercent}/></td>
+            <td className="expand">Graph will be here</td>
             </tr>;
       })}
       </tbody>
     </table>
+    </div>
   );
 }
 
