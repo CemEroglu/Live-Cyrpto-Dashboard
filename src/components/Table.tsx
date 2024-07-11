@@ -5,6 +5,7 @@ import Symbol from "./Symbol";
 import Price from "./Price";
 import MarketValue from "./MarketValue";
 import PriceChange from "./PriceChange";
+import SparkLineChart from "./SparkLineChart";
 import "./Table.css"
 interface TableProps {
   assets: Asset[];
@@ -28,7 +29,7 @@ function Table({ assets }: TableProps) {
             <td><Price price={asset.lastPrice}/></td>
             <td><MarketValue marketValue={asset.quoteVolume}/></td>
             <td className="price-change positive"><PriceChange priceChange={asset.priceChangePercent}/></td>
-            <td className="expand">Graph will be here</td>
+            <td className="expand"><SparkLineChart data={[10, 5, 7, 10, 12, 15, 9, 6, 11, 13, 8,10, 5, 7, 10, 12, 15, 9, 6, 11, 13, 8]}/></td>
             </tr>;
       })}
       </tbody>
