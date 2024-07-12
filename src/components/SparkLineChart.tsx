@@ -4,12 +4,13 @@ import Chart from 'chart.js/auto';
 
 interface SparklineProps {
   data: number[];
+  priceChange: number;
   width?: number;
   height?: number;
   color?: string;
 }
 
-const Sparkline: React.FC<SparklineProps> = ({ data, width = 100, height = 30, color = 'rgba(75, 192, 192, 1)' }) => {
+const Sparkline: React.FC<SparklineProps> = ({ data, priceChange, width = 100, height = 30, color = priceChange > 0 ? 'green' : priceChange < 0 ? 'red' : 'black'}) => {
   const canvasRef = useRef<HTMLCanvasElement>(null);
 
   useEffect(() => {

@@ -10,12 +10,11 @@ const CryptoDashboard: React.FC = () => {
   useEffect(() => {
     const getData = async () => {
       const data = await fetchAssets();
-      // setPrevAssets(assets);
       setAssets(data);
     };
 
     getData();
-    const interval = setInterval(getData, 5000000);
+    const interval = setInterval(getData, 10000);
 
     return () => clearInterval(interval);
   }, []);

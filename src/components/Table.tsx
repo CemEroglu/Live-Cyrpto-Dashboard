@@ -31,7 +31,7 @@ function Table({ assets }: TableProps) {
             <td className="price"><Price price={asset.lastPrice}/></td>
             <td className="market-value"><MarketValue marketValue={asset.quoteVolume}/></td>
             <td className="price-change positive"><PriceChange priceChange={asset.priceChangePercent}/></td>
-            <td className="expand"><SparkLineChart data={[10, 5, 7, 10, 12, 15, 9, 6, 11, 13, 8,10, 5, 7, 10, 12, 15, 9, 6, 11, 13, 8]}/></td>
+            <td className="expand"><SparkLineChart data={asset.sparkline} priceChange={asset.priceChangePercent}/></td>
             </tr>;
       })}
       </tbody>
