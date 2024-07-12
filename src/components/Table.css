@@ -9,7 +9,7 @@
     box-shadow: 0px 10px 10px #ccc;
     border-radius: 10px;
     white-space: nowrap;
-    width: 80em;
+    width: max-content;
     max-width: 80%;
     margin: auto;
     overflow-x: auto;
@@ -29,7 +29,4 @@
 .table tbody tr:hover{
     background-color: #eee;
     cursor: default;
-}
-.expand{
-    width: 100%;
 }
