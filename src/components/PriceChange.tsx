@@ -4,7 +4,7 @@ interface PriceChangeProps{
 }
 function PriceChange({priceChange}:PriceChangeProps) {
   return (
-    <div style={{color:`${priceChange>0 ? 'green' : 'red'}`}}>{Number(priceChange).toFixed(2)} %</div>
+    <div style={{color:`${priceChange>0 ? 'green' : 'red'}`}}>{priceChange.toFixed(2)} %</div>
   )
 }
 
