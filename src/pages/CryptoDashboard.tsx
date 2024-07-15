@@ -1,27 +1,29 @@
 import React, { useState, useEffect } from "react";
-import axios from "axios";
 import { Asset } from "../interfaces/Asset";
-import { getAllCurrencies } from "../constants";
 import { fetchAssets } from "../services/api";
 import Table from "../components/Table";
+import {refreshPeriod} from '../constants'
 
 const CryptoDashboard: React.FC = () => {
   const [assets, setAssets] = useState<Asset[]>([]);
+  const [isLoading, setIsLoading] = useState<boolean>(true); //To be able to show loading spinner only on startup
   useEffect(() => {
     const getData = async () => {
       const data = await fetchAssets();
       setAssets(data);
+      setIsLoading(false)
     };
-
     getData();
-    const interval = setInterval(getData, 10000);
+    const interval = setInterval(getData, refreshPeriod);
 
     return () => clearInterval(interval);
   }, []);
   return (
     <div>
-      CryptoDashboardContent
-      <Table assets = {assets} />
+      {
+        isLoading? (<img className="loading-screen" src="loading.svg"/>):(<Table assets = {assets} />)
+      }
+      
     </div>
   );
 };
