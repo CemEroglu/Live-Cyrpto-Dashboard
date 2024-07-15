@@ -42,3 +42,16 @@
     color: gray;
     font-size: small;
 }
+
+.price {
+    transition: background-color 0.3s ease;
+  }
+  
+  .price-up {
+    color: green;
+  }
+  
+  .price-down {
+    color: red;
+  }
+  
