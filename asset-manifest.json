@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/Live-Cyrpto-Dashboard/static/css/main.462dc185.css",
+    "main.js": "/Live-Cyrpto-Dashboard/static/js/main.a446be0f.js",
+    "static/js/453.398f992a.chunk.js": "/Live-Cyrpto-Dashboard/static/js/453.398f992a.chunk.js",
+    "index.html": "/Live-Cyrpto-Dashboard/index.html",
+    "main.462dc185.css.map": "/Live-Cyrpto-Dashboard/static/css/main.462dc185.css.map",
+    "main.a446be0f.js.map": "/Live-Cyrpto-Dashboard/static/js/main.a446be0f.js.map",
+    "453.398f992a.chunk.js.map": "/Live-Cyrpto-Dashboard/static/js/453.398f992a.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.462dc185.css",
+    "static/js/main.a446be0f.js"
+  ]
+}
