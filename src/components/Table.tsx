@@ -17,13 +17,13 @@ function Table({ assets }: TableProps) {
       <thead>
         <tr>
           {tableHeaders.map((header) => (
-            <th>{header}</th>
+            <th key={header}>{header}</th>
           ))}
         </tr>
       </thead>
       <tbody>
       {assets.map((asset) => {
-        return <tr>
+        return <tr key={asset.symbol}>
             <td><Symbol symbol = {asset.symbol}/></td>
             <td className="text-end"><Price price={asset.lastPrice}/></td>
             <td className="text-end"><MarketValue marketValue={asset.quoteVolume}/></td>
