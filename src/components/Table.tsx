@@ -1,6 +1,5 @@
-import React from "react";
 import { Asset } from "../interfaces/Asset";
-import { TableHeaders } from "../constants";
+import { tableHeaders } from "../constants";
 import Symbol from "./Symbol";
 import Price from "./Price";
 import MarketValue from "./MarketValue";
@@ -17,13 +16,13 @@ function Table({ assets }: TableProps) {
     <table className="table">
       <thead>
         <tr>
-          {TableHeaders.map((header) => (
+          {tableHeaders.map((header) => (
             <th>{header}</th>
           ))}
         </tr>
       </thead>
       <tbody>
-      {assets.filter((asset)=>(asset.symbol.endsWith("USDT"))&&(asset.lastPrice!=0)).map((asset) => {
+      {assets.map((asset) => {
         return <tr>
             <td><Symbol symbol = {asset.symbol}/></td>
             <td className="text-end"><Price price={asset.lastPrice}/></td>
