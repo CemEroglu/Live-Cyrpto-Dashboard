@@ -1,4 +1,3 @@
-// Sparkline.tsx
 import React, { useRef, useEffect } from 'react';
 import Chart from 'chart.js/auto';
 

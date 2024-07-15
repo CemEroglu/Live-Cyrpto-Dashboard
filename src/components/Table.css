@@ -12,6 +12,7 @@
     width: max-content;
     max-width: 80%;
     margin: auto;
+    margin-top: 2%;
     overflow-x: auto;
 }
 .table thead{

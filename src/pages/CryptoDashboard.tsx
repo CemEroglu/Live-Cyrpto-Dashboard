@@ -1,3 +1,8 @@
+// CryptoDashboard.tsx
+/**
+ * CryptoDashboard is a simple component that fetchs the data and shows it on the table component.
+ * It shows loading spinner until the data is fetched.
+ */
 import React, { useState, useEffect } from "react";
 import { Asset } from "../interfaces/Asset";
 import { fetchAssets } from "../services/api";
