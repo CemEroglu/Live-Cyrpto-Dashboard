@@ -1,15 +1,16 @@
 {
   "files": {
     "main.css": "/Live-Cyrpto-Dashboard/static/css/main.462dc185.css",
-    "main.js": "/Live-Cyrpto-Dashboard/static/js/main.a446be0f.js",
+    "main.js": "/Live-Cyrpto-Dashboard/static/js/main.b1d46057.js",
     "static/js/453.398f992a.chunk.js": "/Live-Cyrpto-Dashboard/static/js/453.398f992a.chunk.js",
     "index.html": "/Live-Cyrpto-Dashboard/index.html",
+    "static/media/loading.svg": "/Live-Cyrpto-Dashboard/static/media/loading.ecc23a448973351d2b7a0f4610656e38.svg",
     "main.462dc185.css.map": "/Live-Cyrpto-Dashboard/static/css/main.462dc185.css.map",
-    "main.a446be0f.js.map": "/Live-Cyrpto-Dashboard/static/js/main.a446be0f.js.map",
+    "main.b1d46057.js.map": "/Live-Cyrpto-Dashboard/static/js/main.b1d46057.js.map",
     "453.398f992a.chunk.js.map": "/Live-Cyrpto-Dashboard/static/js/453.398f992a.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.462dc185.css",
-    "static/js/main.a446be0f.js"
+    "static/js/main.b1d46057.js"
   ]
 }
