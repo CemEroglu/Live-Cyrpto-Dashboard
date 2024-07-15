@@ -1,5 +1,5 @@
-import { baseCurrency } from '../constants'
-import { formatMarketValue } from '../utils';
+import { baseCurrency } from '../../constants'
+import { formatMarketValue } from '../../utils';
 interface MarketValueProps{
     marketValue:number;
 }

@@ -6,13 +6,7 @@ import '@testing-library/jest-dom/extend-expect';
 jest.mock('./services/api');
 const mockedFetchAssets = fetchAssets as jest.MockedFunction<typeof fetchAssets>;
 
-describe("<ReuseInspectionViewPage />", () => {
-  test("renders correctly", () => {
-    render(
-          <CryptoDashboard />
-    );
-    setTimeout(()=>{screen.getByText("Cem")}, 1000)
-  });
+describe("<CryptoDashboard />", () => {
   test('renders loading spinner initially', () => {
     render(<CryptoDashboard />);
     const loadingElement = screen.getByAltText(/Loading.../i);

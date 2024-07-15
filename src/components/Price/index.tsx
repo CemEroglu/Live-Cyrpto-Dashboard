@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
-import { baseCurrency } from '../constants';
-import { formatPrice } from '../utils';
+import { baseCurrency } from '../../constants';
+import { formatPrice } from '../../utils';
 
 interface PriceProps {
   price: number;

@@ -2,7 +2,7 @@ import React from 'react'
 import { binanceCryptoIcons, binanceEtfIcons, binanceCurrencyIcons } from 'binance-icons'
 import parse from 'html-react-parser';
 import "./Symbol.css"
-import { baseCurrency } from '../constants'
+import { baseCurrency } from '../../constants'
 
 interface SymbolProps {
     symbol: string;

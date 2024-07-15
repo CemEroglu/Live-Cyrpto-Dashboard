@@ -1,10 +1,10 @@
-import { Asset } from "../interfaces/Asset";
-import { tableHeaders } from "../constants";
-import Symbol from "./Symbol";
-import Price from "./Price";
-import MarketValue from "./MarketValue";
-import PriceChange from "./PriceChange";
-import SparkLineChart from "./SparkLineChart";
+import { Asset } from "../../interfaces/Asset";
+import { tableHeaders } from "../../constants";
+import Symbol from "../Symbol";
+import Price from "../Price";
+import MarketValue from "../MarketValue";
+import PriceChange from "../PriceChange";
+import SparkLineChart from "../SparkLineChart";
 import "./Table.css"
 interface TableProps {
   assets: Asset[];

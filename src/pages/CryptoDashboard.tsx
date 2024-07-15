@@ -8,6 +8,7 @@ import { Asset } from "../interfaces/Asset";
 import { fetchAssets } from "../services/api";
 import Table from "../components/Table";
 import {refreshPeriod} from '../constants'
+import Loading from "../images/loading.svg"
 
 const CryptoDashboard: React.FC = () => {
   const [assets, setAssets] = useState<Asset[]>([]);
@@ -26,7 +27,7 @@ const CryptoDashboard: React.FC = () => {
   return (
     <div>
       {
-        isLoading? (<img className="loading-screen" src="loading.svg" alt="Loading..."/>):(<Table assets = {assets} />)
+        isLoading? (<img className="loading-screen" src={Loading} alt="Loading..."/>):(<Table assets = {assets} />)
       }
       
     </div>
