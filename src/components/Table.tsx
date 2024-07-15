@@ -7,8 +7,6 @@ import MarketValue from "./MarketValue";
 import PriceChange from "./PriceChange";
 import SparkLineChart from "./SparkLineChart";
 import "./Table.css"
-import "./Price.css"
-import "./MarketValue.css"
 interface TableProps {
   assets: Asset[];
 }
@@ -28,9 +26,9 @@ function Table({ assets }: TableProps) {
       {assets.filter((asset)=>(asset.symbol.endsWith("USDT"))&&(asset.lastPrice!=0)).map((asset) => {
         return <tr>
             <td><Symbol symbol = {asset.symbol}/></td>
-            <td className="price"><Price price={asset.lastPrice}/></td>
-            <td className="market-value"><MarketValue marketValue={asset.quoteVolume}/></td>
-            <td className="price-change positive"><PriceChange priceChange={asset.priceChangePercent}/></td>
+            <td className="text-end"><Price price={asset.lastPrice}/></td>
+            <td className="text-end"><MarketValue marketValue={asset.quoteVolume}/></td>
+            <td className="text-end"><PriceChange priceChange={asset.priceChangePercent}/></td>
             <td><SparkLineChart data={asset.sparkline} priceChange={asset.priceChangePercent}/></td>
             </tr>;
       })}
