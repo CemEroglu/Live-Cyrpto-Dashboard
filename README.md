@@ -5,7 +5,7 @@
 
 This is project that is build for an assignment. It shows the inital crypto currency prices, market values, 24h changes and it's graphic on a table. The table is refreshed every 10 seconds.
 
-![](screenshots/CryptoDashboard.png)
+![](screenshots/CryptoDashboard.PNG)
 
 
 ## Installation
