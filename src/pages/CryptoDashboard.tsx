@@ -26,7 +26,7 @@ const CryptoDashboard: React.FC = () => {
   return (
     <div>
       {
-        isLoading? (<img className="loading-screen" src="loading.svg"/>):(<Table assets = {assets} />)
+        isLoading? (<img className="loading-screen" src="loading.svg" alt="Loading..."/>):(<Table assets = {assets} />)
       }
       
     </div>
